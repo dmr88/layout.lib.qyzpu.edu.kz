@@ -48,6 +48,16 @@ body textarea:required:valid
 .hidden
 	display: none
 
+.btn
+	padding: 15px 25px
+	color: $gray
+	background-color: $gray-l
+	display: inline-block
+	&:hover
+		text-decoration: none
+		color: #fff
+		background-color: $accent
+
 .header
 	background-color: #287878
 	color: #fff
@@ -100,9 +110,14 @@ nav
 				text-decoration: none
 			&:hover a
 				color: $gold
+			&.active a
+				color: $gold
 .page
 	.title
 		font-size: 40px
+		font-weight: 200
+		text-transform: uppercase
+		margin-top: 0
 
 .sidebar-wrap
 	margin-top: 70px
@@ -115,6 +130,7 @@ nav
 			background-repeat: no-repeat
 			background-position: 15px center
 			padding-left: 45px
+			color: #fff
 			a
 				color: #000
 				display: block
@@ -129,11 +145,65 @@ nav
 				a
 					text-decoration: none
 					color: #fff
+.block-wrap
+	.block
+		display: flex
+		gap: 15px
+		padding-bottom: 30px
+		margin-bottom: 30px
+		.desc
+			font-size: 14px
+		&:hover
+			img
+				transform: scale(1.1)
+	.img-wrap
+		flex: 1
+		overflow: hidden
+		img		
+			transition: all .25s ease-in-out
+	.content
+		flex: 2
+		.title
+			font-size: 20px
+			margin: 0
+			color: #fff
+	&.card
+		flex-direction: row
+		flex-wrap: wrap
+		display: flex
+		gap: 15px
+		.block
+			width: 32%
+			position: relative
+			overflow: hidden
+			.img-wrap
+				img
+					width: 100%
+			.content
+				position: absolute
+				bottom: 0
+				padding: 15px
+				color: #fff
+				background: rgb(102,102,102)
+				background: linear-gradient(180deg, rgba(102,102,102,0) 0%, #000 100%)
+				p
+					max-height: 0
+					overflow: hidden
+					transition: max-height .25s ease-out
+			&:hover
+				.content
+					background: rgb(102,102,102)
+					background: linear-gradient(180deg, rgba(102,102,102,0) 0%, rgba(40,120,120,1) 100%)
+					p
+						max-height: 250px
+
+
 
 .footer
 	background-color: $gray
-	padding: 25px 0
+	padding: 50px 0
 	color: #fff
+	margin-top: 50px
 	a
 		color: #fff
 	.logo-wrap
