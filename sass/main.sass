@@ -82,15 +82,15 @@ body textarea:required:valid
 			font-size: 28px
 			line-height: 0
 			text-transform: uppercase
-
+ul.menu
+	list-style-type: none
+	margin: 0
+	padding: 0
 nav
 	background-color: #105E5E
 	margin-bottom: 55px
 	ul.menu
-		list-style-type: none
 		display: flex
-		margin: 0
-		padding: 0
 		li
 			font-size: 18px
 			a
@@ -106,10 +106,7 @@ nav
 
 .sidebar-wrap
 	margin-top: 70px
-	ul
-		list-style-type: none
-		margin: 0
-		padding: 0
+	ul.menu
 		li
 			background-color: $gray-l
 			padding: 15px
@@ -132,3 +129,21 @@ nav
 				a
 					text-decoration: none
 					color: #fff
+
+.footer
+	background-color: $gray
+	padding: 25px 0
+	color: #fff
+	a
+		color: #fff
+	.logo-wrap
+		.logo-text
+			font-size: 14px
+		.name
+			color: $gold
+			display: contents
+	.bottom-info
+		font-size: 14px
+	.bottom-menu-wrap
+		ul li
+			padding: 10px 0

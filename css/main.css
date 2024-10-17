@@ -96,15 +96,18 @@ body textarea:required:valid {
   text-transform: uppercase;
 }
 
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   background-color: #105E5E;
   margin-bottom: 55px;
 }
 nav ul.menu {
-  list-style-type: none;
   display: flex;
-  margin: 0;
-  padding: 0;
 }
 nav ul.menu li {
   font-size: 18px;
@@ -126,12 +129,7 @@ nav ul.menu li:hover a {
 .sidebar-wrap {
   margin-top: 70px;
 }
-.sidebar-wrap ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.sidebar-wrap ul li {
+.sidebar-wrap ul.menu li {
   background-color: #E8E8E8;
   padding: 15px;
   margin-bottom: 15px;
@@ -140,22 +138,44 @@ nav ul.menu li:hover a {
   background-position: 15px center;
   padding-left: 45px;
 }
-.sidebar-wrap ul li a {
+.sidebar-wrap ul.menu li a {
   color: #000;
   display: block;
 }
-.sidebar-wrap ul li.active {
+.sidebar-wrap ul.menu li.active {
   background-color: #105E5E;
   background-image: url("../img/icon/menu-l.svg");
 }
-.sidebar-wrap ul li.active a {
+.sidebar-wrap ul.menu li.active a {
   color: #fff;
 }
-.sidebar-wrap ul li:hover {
+.sidebar-wrap ul.menu li:hover {
   background-color: #105E5E;
   background-image: url("../img/icon/menu-l.svg");
 }
-.sidebar-wrap ul li:hover a {
+.sidebar-wrap ul.menu li:hover a {
   text-decoration: none;
   color: #fff;
+}
+
+.footer {
+  background-color: #303030;
+  padding: 25px 0;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+}
+.footer .logo-wrap .logo-text {
+  font-size: 14px;
+}
+.footer .logo-wrap .name {
+  color: #E1C88A;
+  display: contents;
+}
+.footer .bottom-info {
+  font-size: 14px;
+}
+.footer .bottom-menu-wrap ul li {
+  padding: 10px 0;
 }/*# sourceMappingURL=main.css.map */
